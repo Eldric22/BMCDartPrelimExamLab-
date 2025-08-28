@@ -16,7 +16,7 @@ void main() {
   print("Name: ${firstName} ${lastName}");
   print("Email: ${email}");
   
-  // Simple validation
+  // Validation of student information
   if (firstName != null && lastName != null && email != null) {
     print("Registration successful!");
   } else {
@@ -51,7 +51,7 @@ void main() {
   print("Enter final exam score (0-100):");
   double finalExam = double.parse(stdin.readLineSync()!);
   
-  // Calculation weighted average
+  // Calculation of weighted average of assigment score, midterm score, and final exam score.
   double finalGrade = (assignment * 0.3) + (midterm * 0.3) + (finalExam * 0.4);
   
   print("\n=== Results ===");
@@ -73,6 +73,6 @@ void main() {
   } else {
     letterGrade = "Failed";
   }
-  
-  print("Letter Grade: $letterGrade"); 
+  // This part will show the output of the grade.
+  print("Letter Grade: $letterGrade");
 }
